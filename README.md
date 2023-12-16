@@ -1,8 +1,5 @@
-# Astro & Tailwind CSS Starter Kit by lexingtonthemes.com
-## Template Integrations
-- @astrojs/tailwind - https://docs.astro.build/en/guides/integrations-guide/tailwind/
-- @astrojs/sitemap - https://docs.astro.build/en/guides/integrations-guide/sitemap/
-## Template Structure
+# Hardware Mafia Website
+## Project Structure
 Inside of your Astro project, you'll see the following folders and files:
 ```
 /

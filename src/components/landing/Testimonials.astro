@@ -1,34 +1,17 @@
 ---
-const testimonials = [
-  {
-    name: "Mohan SP",
-    byline:'Co-Founder of <a class="underline" target="_blank" href="https://www.sensio-ai.in/">Sensio</a>',
-    testimonial: "I've been part of the Hardware Mafia for a year now, and it's been invaluable. The members offer great support and solutions across a wide range of technical and entrepreneurial areas. In the hardware space, finding such a supportive community is rare. If you're a hardware startup, join this community – you won't have to navigate your entrepreneurial journey alone.",
-  },
-  {
-    name: "Kiran Kumar",
-    byline: 'Founder of <a class="underline" target="_blank" href="https://pongfox.com/">PongFox</a>',
-    testimonial: "Transitioning from a software background to hardware development presented unique challenges, especially in India's nascent hardware landscape. Joining the community has been a game-changer for me. Facing common hurdles like component sourcing and navigating import-export processes, this community offered invaluable support and insights. The shared experiences, collective knowledge and the camaraderie make it an essential asset in this complex industry."
-  },
-  {
-    name: "??",
-    byline: "",
-    testimonials: "",
-  },
-  {
-    name: "??",
-    byline: "",
-    testimonials: "",
-  },
-]
+import {getTestimonialEntries} from '@/content/config'
+import { ContentSchemaContainsSlugError } from 'astro/dist/core/errors/errors-data';
+const testimonials = await getTestimonialEntries();
 ---
 <div
   class="text-white text-xs gap-3 gap-y-12 grid grid-cols-1 md:grid-cols-4 mx-auto p-8 sm:grid-cols-2">
   {testimonials.map((t) => <div class="flex flex-col justify-between h-full">
-    <p class="text-[#ed642c]" set:text={t.testimonial} />
+    <p class="text-[#ed642c]">
+      {t.body}
+    </p>
     <div class="mt-3">
-      <span class="block font-semibold mt-3" set:text={t.name} />
-      <span class="block text-eagle" set:html={t.byline} />
+      <span class="block font-semibold mt-3" set:text={t.data.author} />
+      <span class="block text-eagle" set:html={t.data.byline} />
     </div>
   </div>)}
 </div>
