@@ -1,4 +1,10 @@
 # Hardware Mafia Website
+## The Stack
+The website is built on the following stack:
+- [Astro](https://astro.build/) - The web framework for content-driven websites.
+- [Tailwind CSS](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML.
+- [ASTROMAX](https://github.com/michael-andreuzza/astromax) - Free template, designed and developed by [Michael Andreuzza](https://twitter.com/Mike_Andreuzza).
+
 ## Project Structure
 Inside of your Astro project, you'll see the following folders and files:
 ```
@@ -23,5 +29,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`      | Preview your build locally, before deploying     |
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
+
 ## Want to learn more?
-Feel free to check Astros [documentation](https://docs.astro.build)
+Feel free to check Astro's [documentation](https://docs.astro.build)

@@ -1,12 +1,12 @@
 ---
 import {getTestimonialEntries} from '@/content/config'
-import { ContentSchemaContainsSlugError } from 'astro/dist/core/errors/errors-data';
 const testimonials = await getTestimonialEntries();
+const testimonialColorClasses = ["text-[#ed642c]", "text-[#ed772f]", "text-[#ef9335]", "text-eagle"];
 ---
 <div
   class="text-white text-xs gap-3 gap-y-12 grid grid-cols-1 md:grid-cols-4 mx-auto p-8 sm:grid-cols-2">
-  {testimonials.map((t) => <div class="flex flex-col justify-between h-full">
-    <p class="text-[#ed642c]">
+  {testimonials.map((t, i) => <div class="flex flex-col justify-between h-full">
+    <p class={testimonialColorClasses[i % 4]}>
       {t.body}
     </p>
     <div class="mt-3">
