@@ -14,5 +14,5 @@ export const collections = {
 };
 
 export async function getTestimonialEntries() {
-    return (await getCollection("testimonials", ({data}) =>  data.hidden !== true ));
+    return (await getCollection("testimonials", ({data}) =>  data.hidden !== true )).sort((a, b) => a.slug.localeCompare(b.slug));
 }
