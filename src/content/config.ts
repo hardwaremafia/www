@@ -5,7 +5,11 @@ const testimonialsCollection = defineCollection({
     schema: z.object({
       hidden: z.boolean().default(false),
       author: z.string().max(28),
-      byline: z.string().max(36),
+      org: z.object({
+        name: z.string().max(20),
+        title: z.string().max(20),
+        url: z.string().url(),
+      }),
     }),
 });
 

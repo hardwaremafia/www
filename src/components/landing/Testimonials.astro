@@ -11,7 +11,9 @@ const testimonialColorClasses = ["text-[#ed642c]", "text-[#ed772f]", "text-[#ef9
     </p>
     <div class="mt-3">
       <span class="block font-semibold mt-3" set:text={t.data.author} />
-      <span class="block text-eagle" set:html={t.data.byline} />
+      <span class="block text-eagle">
+        {t.data.org.title}, <a href={t.data.org.url} target="_blank" class="underline">{t.data.org.name}</a>
+      </span>
     </div>
   </div>)}
 </div>
