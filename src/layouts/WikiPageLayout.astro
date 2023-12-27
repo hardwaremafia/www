@@ -2,18 +2,27 @@
 import DesktopSideBar from "@/components/sidebar/DesktopSideBar.astro";
 import BaseLayout from "./BaseLayout.astro";
 import MobileSideBar from "@/components/sidebar/MobileSideBar.astro";
-const {frontmatter = {}} = Astro.props;
+const {sourcePath, frontmatter} = Astro.props;
 //TODO: proper page title, SEO, etc
 ---
 <BaseLayout>
-    <DesktopSideBar />
-    <MobileSideBar />
-    <section class="lg:min-h-screen lg:ml-64 pt-8 lg:pt-20">
-        <div class="max-w-4xl px-8 pb-12">
-            <div class="mx-auto prose dark:prose-invert prose-headings:font-display prose-blockquote:text-carrot prose-code:text-eagle prose-a:text-eagle hover:prose-a:text-carrot">
-                {frontmatter.title && <h1>{frontmatter.title}</h1>}
-                <slot />
+    <div class="lg:min-h-[80vh]">
+        <DesktopSideBar />
+        <MobileSideBar />
+        <section class="lg:ml-64 pt-8 lg:pt-20">
+            <div class="max-w-4xl px-8 pb-12">
+                <div class="mx-auto prose dark:prose-invert prose-headings:font-display prose-blockquote:text-carrot prose-code:text-eagle prose-a:text-eagle hover:prose-a:text-carrot">
+                    {frontmatter.title && <h1>{frontmatter.title}</h1>}
+                    <slot />
+                </div>
+                {sourcePath && 
+                    <div class="flex">
+                        <div class="mx-auto pt-8 pb-4">
+                        <a class="font-display text-eagle hover:text-carrot uppercase" href={`https://github.dev/hardwaremafia/www/blob/master/${sourcePath}`} target="_blank">✎ Edit New Page</a>
+                        </div>
+                    </div>
+                }
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </BaseLayout>

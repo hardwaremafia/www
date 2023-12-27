@@ -11,7 +11,8 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content} = await entry.render();
+console.log("entry", entry)
 ---
-<WikiPageLayout frontmatter={{...entry.data}}>
+<WikiPageLayout sourcePath={`src/content/wiki/${entry.slug}.md`} frontmatter={{...entry.data}}>
   <Content />
 </WikiPageLayout>

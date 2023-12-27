@@ -11,4 +11,4 @@ To contribute to the wiki you will require a [Github](https://github.com) accoun
 
 The content is formatted with [Markdown](https://daringfireball.net/projects/markdown/). If you are not familiar with it, then you can refer [cheatsheet](https://www.markdownguide.org/cheat-sheet/) as a quick overview.
 
-If you are unsure of how to organize your contribution, then you can add it to the `unorganized-dump.md` file.
+If you are unsure of how to organize your contribution, then you can add it to the [Unorganized dump](unorganized-dump) page.

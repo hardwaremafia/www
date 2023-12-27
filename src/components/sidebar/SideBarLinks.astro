@@ -6,3 +6,6 @@ const entries = await getWikiEntries();
 <ul class="list-disc px-4">
         {entries.map((e) => <li class="pb-2 font-display text-xs hover:text-carrot"><a href={e.data.goto || e.slug} target={e.data.goto? '_blank' : '_self'}>{e.data.title}{e.data.goto? ' ↗️' : ''}</a></li>)}
 </ul>
+<div class="py-4">
+        <a class="font-display text-carrot hover:text-black uppercase" href="https://github.dev/hardwaremafia/www/blob/master/src/content/wiki/sample.md/" target="_blank">+ Add New Page</a>
+</div>
