@@ -2,7 +2,7 @@
 import {site} from "@/site";
 ---
 <section
-  class="mx-auto border-white/20  border-t 2xl:max-w-7xl bg-black border-b justify-center lg:fixed lg:z-50 w-full">
+  class="mx-auto border-white/20  border-t 2xl:max-w-7xl bg-black border-b justify-center lg:fixed lg:z-50 w-full relative z-40">
   <div class="mx-auto bg-black justify-center w-full">
     <div
       class="mx-auto border-white/20  border-x max-w-7xl flex flex-col lg:flex-row lg:items-center lg:justify-between w-full">
@@ -14,9 +14,14 @@ import {site} from "@/site";
           ><span>{site.name}</span>
         </a>
         <a
+        href="/wiki/"
+        class="w-full bg-white duration-200 font-display hover:bg-black hover:text-white lg:ml-auto lg:w-auto px-6 py-4 sm:rounded-full text-black text-center text-xs uppercase"
+        >Resource Wiki</a
+      >
+        <a
           href={site.meetupUrl}
           target="_blank"
-          class="w-full bg-white duration-200 font-display hover:bg-black hover:text-white lg:ml-auto lg:w-auto px-6 py-4 sm:rounded-full text-black text-center text-xs uppercase"
+          class="w-full bg-white duration-200 font-display hover:bg-black hover:text-white lg:w-auto px-6 py-4 sm:rounded-full text-black text-center text-xs uppercase"
           >Weekly Meetup</a
         > <a
           href={site.whatsAppUrl}
