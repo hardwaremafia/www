@@ -8,7 +8,7 @@ const {frontmatter = {}} = Astro.props;
 <BaseLayout>
     <DesktopSideBar />
     <MobileSideBar />
-    <section class="lg:min-h-screen lg:ml-64 pt-8">
+    <section class="lg:min-h-screen lg:ml-64 pt-8 lg:pt-20">
         <div class="max-w-4xl px-8 pb-12">
             <div class="mx-auto prose dark:prose-invert prose-headings:font-display prose-blockquote:text-carrot prose-code:text-eagle prose-a:text-eagle hover:prose-a:text-carrot">
                 {frontmatter.title && <h1>{frontmatter.title}</h1>}
