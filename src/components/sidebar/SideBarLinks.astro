@@ -1,0 +1,8 @@
+---
+import {getWikiEntries} from '@/content/config';
+const entries = await getWikiEntries();
+---
+<h2 class="font-display pt-4 pb-2">Resources</h2>
+<ul class="list-disc px-4">
+        {entries.map((e) => <li class="pb-2 font-display text-xs hover:text-carrot"><a href={e.data.goto || e.slug} target={e.data.goto? '_blank' : '_self'}>{e.data.title}{e.data.goto? ' ↗️' : ''}</a></li>)}
+</ul>

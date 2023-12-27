@@ -1,0 +1,13 @@
+---
+import SideBarLinks from "@/components/sidebar/SideBarLinks.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+---
+<!-- Use Alpine state to show this in mobile-size instead of loading full page -->
+<BaseLayout>
+    <section class="flex items-center gradient-grid">
+        <div class="mx-auto pt-4 pb-12 text-white">
+            <SideBarLinks />
+        </div>
+    </section>
+</BaseLayout>
