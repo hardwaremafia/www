@@ -29,8 +29,6 @@
     /* Flat-top three */
     "cv02" 1;
   /* Open 4 */
-  --tw-prose-kbd: "#e7e7d8";
-  --tw-prose-invert-kbd: "#e7e7d8";
 }
 
 @supports (font-variation-settings: normal) {
