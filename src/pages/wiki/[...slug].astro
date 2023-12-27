@@ -1,0 +1,17 @@
+---
+import { getWikiEntries } from '@/content/config';
+import WikiPageLayout from '@/layouts/WikiPageLayout.astro';
+
+export async function getStaticPaths() {
+  const wikiEntries = await getWikiEntries();
+  return wikiEntries.filter(({data}) => data.goto ? false : true).map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content} = await entry.render();
+---
+<WikiPageLayout frontmatter={{...entry.data}}>
+  <Content />
+</WikiPageLayout>

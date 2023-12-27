@@ -13,10 +13,24 @@ const testimonialsCollection = defineCollection({
     }),
 });
 
+const wikiCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    hidden: z.boolean().default(false),
+    title: z.string().max(40),
+    goto: z.string().url().optional(),
+  }),
+});
+
 export const collections = {
   'testimonials': testimonialsCollection,
+  'wiki': wikiCollection,
 };
 
 export async function getTestimonialEntries() {
     return (await getCollection("testimonials", ({data}) =>  data.hidden !== true )).sort((a, b) => a.slug.localeCompare(b.slug));
+}
+
+export async function getWikiEntries() {
+  return (await getCollection("wiki", ({data}) =>  data.hidden !== true )).sort((a, b) => a.slug.localeCompare(b.slug));
 }

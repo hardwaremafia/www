@@ -1,0 +1,20 @@
+---
+import DesktopSideBar from "@/components/sidebar/DesktopSideBar.astro";
+import BaseLayout from "./BaseLayout.astro";
+const {frontmatter = {}} = Astro.props;
+//TODO: proper page title, SEO, etc
+---
+<BaseLayout>
+    <div class="pt-12">
+        <DesktopSideBar />
+        <!-- TODO: MobileSideBar -->
+        <section class="min-h-screen ml-64 pt-8">
+            <div class="max-w-4xl px-8 pb-12">
+                <div class="mx-auto prose dark:prose-invert prose-headings:font-display prose-blockquote:text-carrot prose-code:text-eagle prose-a:text-eagle hover:prose-a:text-carrot">
+                    {frontmatter.title && <h1>{frontmatter.title}</h1>}
+                    <slot />
+                </div>
+            </div>
+        </section>
+    </div>
+</BaseLayout>
