@@ -11,6 +11,7 @@ If you are looking to sell any of your machines, please list them at the end of 
 - Current owner: Mohan SP
 - Manufacturer: ETS SMTMATE
 - Model: T962
+- Purchase date: 1st Jan 2020
 - Original price - INR 53,470 (incl. taxes)
 - My ask - INR 30,000 (incl. taxes)
 - Located at - Bengaluru, Karnataka
@@ -27,6 +28,7 @@ If you are looking to sell any of your machines, please list them at the end of 
 - Current owner: your name
 - Manufacturer: machine made by?
 - Model: model details
+- Purchased date: when was it purchased?
 - Original price - you purchased at?
 - My ask - you want to sell at?
 - Located at - where is it currently?
