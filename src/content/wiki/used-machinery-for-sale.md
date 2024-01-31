@@ -2,7 +2,7 @@
 title: Used Machinery for Sale
 ---
 
-The following machines are currently owned by the community member but are looking to sale it. Please reach out to the current owner in the [chat group](https://chat.whatsapp.com/HdCgjEg06cQ3ovVjGtFLwE) if you are interested in buying it.
+The following machines are currently owned by the community member but are looking to sell it. Please reach out to the current owner in the [chat group](https://chat.whatsapp.com/HdCgjEg06cQ3ovVjGtFLwE) if you are interested in buying it.
 
 If you are looking to sell any of your machines, please list them at the end of the page. There is a sample entry you can copy and edit. Please remove the entry when machine is sold or is not avaiable for sale.
 
