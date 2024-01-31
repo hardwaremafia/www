@@ -1,9 +1,9 @@
 ---
-title: Hardware Mafia Resource Wiki
+title: Hardware Mafia Community Wiki
 layout: '@/layouts/WikiPageLayout.astro'
 ---
 
-Welcome to the resource wiki. It is meant to curate various hardware related resources by community members.
+Welcome to the community wiki. It is meant to curate various hardware related resources by community members.
 
 ## Contribute
 
