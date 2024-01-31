@@ -9,8 +9,8 @@ If you are looking to sell any of your machines, please list them at the end of 
 ## Reflow Oven
 
 - Current owner: Mohan SP
-- Manufacturer: ??
-- Model: ??
+- Manufacturer: ETS SMTMATE
+- Model: T962
 - Original price - INR 53,470 (incl. taxes)
 - My ask - INR 30,000 (incl. taxes)
 - Located at - Bengaluru, Karnataka
