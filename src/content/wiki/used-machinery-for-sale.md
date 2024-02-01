@@ -23,7 +23,7 @@ If you are looking to sell any of your machines, please list them at the end of 
 
 ---
 
-## Sample Entry (Copy this, paste above three-dash, edit it, check about entry for reference)
+## Sample Entry (Copy this, paste above three-dash, edit it, check above entries for reference)
 
 - Current owner: your name
 - Manufacturer: machine made by?
