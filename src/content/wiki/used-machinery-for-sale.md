@@ -12,12 +12,12 @@ If you are looking to sell any of your machines, please list them at the end of 
 - Manufacturer: ETS SMTMATE
 - Model: T962
 - Purchase date: 1st Jan 2020
-- Original price - INR 53,470 (incl. taxes)
-- My ask - INR 30,000 (incl. taxes)
-- Located at - Bengaluru, Karnataka
-- Condition - Pristine. It has been used 5 times in the last 4 years. Everything works as expected.
-- Purpose of sale - Not useful to us anymore
-- Photos
+- Original price: INR 53,470 (incl. taxes)
+- My ask: INR 30,000 (incl. taxes)
+- Located at: Bengaluru, Karnataka
+- Condition: Pristine. It has been used 5 times in the last 4 years. Everything works as expected.
+- Purpose of sale: Not useful to us anymore
+- Photos:
   - https://drive.google.com/file/d/1DcxByanpJZZPOn3onJytzdYlfmhgH8Vi/view?usp=sharing
   - https://drive.google.com/file/d/1jfhXODsPx07T29IcEEKoXpc-3jNNzTyd/view?usp=sharing
 
@@ -29,10 +29,10 @@ If you are looking to sell any of your machines, please list them at the end of 
 - Manufacturer: machine made by?
 - Model: model details
 - Purchased date: when was it purchased?
-- Original price - you purchased at?
-- My ask - you want to sell at?
-- Located at - where is it currently?
-- Condition - details about the current operating condition of the machine
-- Purpose of sale - why are you selling it?
-- Photos
+- Original price: you purchased at?
+- My ask: you want to sell at?
+- Located at: where is it currently?
+- Condition: details about the current operating condition of the machine
+- Purpose of sale: why are you selling it?
+- Photos:
   - links of photos for the machine - use Google Drive if unsure
