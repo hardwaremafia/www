@@ -3,7 +3,7 @@ export const site = {
     cta: "Join The Mafia",
     homeUrl: "https://thehardwaremafia.com",
     eventsUrl: "https://lu.ma/hardwaremafia",
-    whatsAppUrl: "https://chat.whatsapp.com/HdCgjEg06cQ3ovVjGtFLwE",
+    whatsAppUrl: "https://chat.whatsapp.com/LbDrSl4K4RhHmMEO4VIL3h",
     twitter: "https://twitter.com/HardwareMafia",
     github: "https://github.com/HardwareMafia",
 };
