@@ -6,6 +6,8 @@ content:
     label: Wiki Pages
     type: collection
     path: src/content/wiki
+    view:
+      fields: ["title", "hidden"]
     fields:
       - name: hidden
         label: Should Hide
@@ -17,6 +19,9 @@ content:
         label: GoTo URL
         required: false
         pattern: {message: "Must be a valid URL", regex: "^https?:\/\/[^\s/$.?#].[^\s]*$" }
+      - name: body
+        label: Body
+        type: rich-text
   - name: testimonials
     label: Testimonials
     type: collection
