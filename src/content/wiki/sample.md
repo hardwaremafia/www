@@ -2,7 +2,7 @@
 hidden: true
 title: Sample Page
 ---
-To add new page: copy this file in `wik/` directory, rename file, make necessary changes, disable `hidden` flag above.
+To add new page: copy this file in `wiki/` directory, rename file, make necessary changes, disable `hidden` flag above.
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
 
