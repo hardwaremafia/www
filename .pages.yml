@@ -21,6 +21,8 @@ content:
     label: Testimonials
     type: collection
     path: src/content/testimonials
+    view:
+      fields: ["author", "org.name", "hidden"]
     fields:
       - name: hidden
         label: Should Hide
@@ -38,3 +40,8 @@ content:
           - name: url
             label: URL
             pattern: {message: "Must be a valid URL", regex: "^https?:\/\/[^\s/$.?#].[^\s]*$" }
+          - name: body
+            label: Body
+            type: code
+            options:
+              language: html
