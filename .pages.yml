@@ -1,3 +1,6 @@
+media:
+  - input: public/media
+  - output: /media
 content:
   - name: wiki
     label: Wiki Pages
