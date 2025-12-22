@@ -3,3 +3,20 @@ content:
     label: Testimonials
     type: collection
     path: src/content/testimonials
+    fields:
+      - name: hidden
+        label: Should Hide
+        type: boolean
+        default: false
+      - name: author
+        label: Author Name
+      - name: org
+        label: Organization
+        fields:
+          - name: name
+            label: Name
+          - name: title
+            label: Title / Position
+          - name: url
+            label: URL
+            pattern: {message: "Must be a valid URL", regex: "^https?:\/\/[^\s/$.?#].[^\s]*$" }
