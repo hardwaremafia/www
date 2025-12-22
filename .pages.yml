@@ -1,0 +1,5 @@
+content:
+  - name: testimonials
+    label: Testimonials
+    type: collection
+    path: src/content/testimonials
