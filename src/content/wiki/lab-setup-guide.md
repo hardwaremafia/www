@@ -4,7 +4,7 @@ title: Lab Setup Guide
 
 ## Vendors
 1. ESD safe products
-  - [Blossom Solutions, Bengaluru](https://www.blossomsolutions.in/)
+   - [Blossom Solutions, Bengaluru](https://www.blossomsolutions.in/)
 
 ## Additional Resources
 
