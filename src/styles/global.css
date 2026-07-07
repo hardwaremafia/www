@@ -1,58 +1,142 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind */
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+    /* Animations */
+    --animate-marquee: marquee 15s linear infinite;
+    --animate-marquee2: marquee2 25s linear infinite;
+    --animate-scroller3: scroller3 25s linear infinite;
+    --animate-spin-slow: spin 4s linear infinite;
+    --animate-spin-slower: spin 6s linear infinite;
+    --animate-spin-reverse: spin-reverse 1s linear infinite;
+    --animate-spin-reverse-slow: spin-reverse 4s linear infinite;
+    --animate-spin-reverse-slower: spin-reverse 6s linear infinite;
+    --animate-scroller: scroller 15s linear infinite;
+    --animate-scroller2: scroller2 20s linear infinite;
+    --animate-fade-in: fade-in 0.5s linear forwards;
+    /* Keyframes */
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    @keyframes marquee2 {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+    @keyframes scroller {
+        0% {
+            transform: translateY(10em);
+        }
+        100% {
+            transform: translateY(-14em);
+        }
+    }
+    @keyframes scroller2 {
+        0% {
+            transform: translateY(10em);
+        }
+        100% {
+            transform: translateY(-14em);
+        }
+    }
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes scroller3 {
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+    @keyframes spin-reverse {
+        to {
+            transform: rotate(-360deg);
+        }
+    }
+    /* Colors */
+    --color-black: #1e1e1e;
+    --color-white: #e7e7d8;
+    --color-eagle: #afac95;
+    --color-carrot: #ea4125;
+    /* Fonts */
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Basement", ui-sans-serif, system-ui, sans-serif;
+}
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
 
 /* CSS */
 :root {
-  font-family: Inter, sans-serif;
-  font-feature-settings:
-    "liga" 1,
-    "calt" 1,
-    /* Contextual Alternates */
-    "dlig" 1,
-    /* Discretionary Ligatures */
-    "ss07" 1,
-    /* fSquare punctuation */
-    "ss08" 1,
-    /* Square quotes */
-    "zero" 1,
-    /* Slashed zero */
-    "tnum" 1,
-    /* Tabular numbers */
-    "cv03",
-    /* Open six */
-    "cv04" 1,
-    /* Open nine */
-    "cv01" 1,
-    /* Alternate one */
-    "cv09",
-    /* Flat-top three */
-    "cv02" 1;
-  /* Open 4 */
+    font-family: Inter, sans-serif;
+    font-feature-settings:
+        "liga" 1,
+        "calt" 1,
+        /* Contextual Alternates */ "dlig" 1,
+        /* Discretionary Ligatures */ "ss07" 1,
+        /* fSquare punctuation */ "ss08" 1,
+        /* Square quotes */ "zero" 1,
+        /* Slashed zero */ "tnum" 1,
+        /* Tabular numbers */ "cv03",
+        /* Open six */ "cv04" 1,
+        /* Open nine */ "cv01" 1,
+        /* Alternate one */ "cv09",
+        /* Flat-top three */ "cv02" 1;
+    /* Open 4 */
 }
 
 @supports (font-variation-settings: normal) {
-
-  /* Use variable font if supported */
-  :root {
-    font-family: InterVariable, sans-serif;
-  }
+    /* Use variable font if supported */
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
 }
 
 @font-face {
-  font-family: "Basement";
-  src: url("../fonts/BSBlack.eot");
-  src: url("../fonts/BSBlack.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/BSBlack.woff2") format("woff2"),
-    url("../fonts/BSBlack.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  descent-override: 0%;
+    font-family: "Basement";
+    src: url("../fonts/BSBlack.eot");
+    src:
+        url("../fonts/BSBlack.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/BSBlack.woff2") format("woff2"),
+        url("../fonts/BSBlack.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    descent-override: 0%;
 }
 
 .gradient-grid {
-
-  background-image: radial-gradient(circle at center center, transparent 0%, rgba(255, 255, 255, 0) 99%), repeating-linear-gradient(0deg, rgba(205, 205, 205, 0.2) 0px, rgba(205, 205, 205, 0.2) 1px, transparent 1px, transparent 6px), repeating-linear-gradient(90deg, rgba(205, 205, 205, 0.2) 0px, rgba(205, 205, 205, 0.2) 1px, transparent 1px, transparent 6px), linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    background-image:
+        radial-gradient(
+            circle at center center,
+            transparent 0%,
+            rgba(255, 255, 255, 0) 99%
+        ),
+        repeating-linear-gradient(
+            0deg,
+            rgba(205, 205, 205, 0.2) 0px,
+            rgba(205, 205, 205, 0.2) 1px,
+            transparent 1px,
+            transparent 6px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(205, 205, 205, 0.2) 0px,
+            rgba(205, 205, 205, 0.2) 1px,
+            transparent 1px,
+            transparent 6px
+        ),
+        linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 
 /*.splide__pagination {
