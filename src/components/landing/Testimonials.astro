@@ -1,19 +1,38 @@
 ---
-import {getTestimonialEntries} from '@/content/config'
+import { getTestimonialEntries } from "@/content/testimonials";
 const testimonials = await getTestimonialEntries();
-const testimonialColorClasses = ["text-[#ed642c]", "text-[#ed772f]", "text-[#ef9335]", "text-eagle"];
+const testimonialColorClasses = [
+    "text-[#ed642c]",
+    "text-[#ed772f]",
+    "text-[#ef9335]",
+    "text-eagle",
+];
 ---
+
 <div
-  class="text-white text-xs gap-3 gap-y-12 grid grid-cols-1 md:grid-cols-4 mx-auto p-8 sm:grid-cols-2">
-  {testimonials.map((t, i) => <div class="flex flex-col justify-between h-full">
-    <p class={testimonialColorClasses[i % 4]}>
-      {t.body}
-    </p>
-    <div class="mt-3">
-      <span class="block font-semibold mt-3" set:text={t.data.author} />
-      <span class="block text-eagle">
-        {t.data.org.title}, <a href={t.data.org.url} target="_blank" class="underline">{t.data.org.name}</a>
-      </span>
-    </div>
-  </div>)}
+    class="text-white text-xs gap-3 gap-y-12 grid grid-cols-1 md:grid-cols-4 mx-auto p-8 sm:grid-cols-2"
+>
+    {
+        testimonials.map((t, i) => (
+            <div class="flex flex-col justify-between h-full">
+                <p class={testimonialColorClasses[i % 4]}>{t.body}</p>
+                <div class="mt-3">
+                    <span
+                        class="block font-semibold mt-3"
+                        set:text={t.data.author}
+                    />
+                    <span class="block text-eagle">
+                        {t.data.org.title},{" "}
+                        <a
+                            href={t.data.org.url}
+                            target="_blank"
+                            class="underline"
+                        >
+                            {t.data.org.name}
+                        </a>
+                    </span>
+                </div>
+            </div>
+        ))
+    }
 </div>
